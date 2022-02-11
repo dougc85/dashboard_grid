@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Roboto' sans-serif;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 230px 1fr;
+  grid-template-rows: 150px 1fr;
+}
+
+.sidebar {
+  padding: 15px;
+  background-color: rgb(47, 152, 212);
+  grid-column: 1;
+  grid-row: 1 / -1;
+  color: white;
+  display: grid;
+  align-items: start;
+  grid-template-rows: repeat(3, min-content);
+  row-gap: 50px;
+}
+
+.sidebar > nav > ul {
+  display: grid;
+  gap: 10px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon {
+  transform: scale(1.5);
+  margin-right: 18px;
+}
+
+.logo-title {
+  font-size: 2.2rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+}
+
+.nav-icon {
+  transform: scale(.7);
+  margin-right: 15px;
+}
+
+.nav-option {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+
+
+
+.header {
+  background-color: white;
+  padding: 15px;
+  padding-left: 30px;
+}
+
+.header-top {
+  display: flex;
+  padding-right: 50px;
+  margin-bottom: 20px;
+  justify-content: space-between;
+}
+
+.header-top-right {
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  align-items: center;
+  column-gap: 20px;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  margin-right: 90px;
+  max-width: 600px;
+}
+
+.search-icon {
+  transform: scale(.8);
+  margin-right: 10px;
+}
+
+.search-box {
+  border: none;
+  background-color: rgb(232, 237, 247);
+  font-size: 1.5rem;
+  height: 2.5rem;
+  border-radius: 15px;
+  padding-left: 10px;
+  flex-grow: 1;
+}
+
+.alert-icon {
+  transform: scale(.8);
+}
+
+.profile-pic-crop {
+  height: 35px;
+  width: 35px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-pic {
+  height: 38px;
+}
+
+.profile-name {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.header-bottom {
+  display: grid;
+  grid-template-columns: 255px 1fr max-content;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.header-bottom-left {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.profile-pic-crop-large {
+  height: 60px;
+  width: 60px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.profile-pic-large {
+  height: 65px;
+}
+
+.hi {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.welcome-name {
+  font-weight: 700;
+  font-size: 1.9rem;
+}
+
+.header-bottom-right {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 250px;
+  gap: 20px;
+  grid-column: 3;
+}
+
+.header-bottom-right > button {
+  color: white;
+  background-color: rgb(47, 152, 212);
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 15px;
+  padding: 7px 0;
+}
+
+
+
+
+
+.main-content {
+  background-color: rgb(232, 237, 247);
+}
